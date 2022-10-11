@@ -1,12 +1,12 @@
 package com.example.testspringauth;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+@Controller
 public class WebController {
     @GetMapping("/")
     String index()    {
-        return "Hello, Church people";
+        return "landing-page";
     }
 }
